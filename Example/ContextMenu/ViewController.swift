@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         (contextMenuButtons + uiContextMenuButtons).forEach {
-            $0?.layer.cornerRadius = 10
+            $0.layer.cornerRadius = 10
         }
 
         if #available(iOS 13.0, *) {
