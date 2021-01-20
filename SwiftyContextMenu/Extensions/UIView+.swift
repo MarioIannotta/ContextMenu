@@ -5,12 +5,12 @@
 //  Created by Mario Iannotta on 14/06/2020.
 //
 
-import Foundation
+import UIKit
 
 extension UIView {
 
     var absoluteFrame: CGRect {
-        UIApplication.shared.delegate?.window.flatMap { convert(bounds, to: $0) } ?? .zero
+        convert(bounds, to: nil)
     }
 
     func snapshot() -> UIImage? {

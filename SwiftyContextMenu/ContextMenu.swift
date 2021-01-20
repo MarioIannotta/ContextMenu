@@ -167,9 +167,11 @@ extension UIView: ContextMenuSourceView {
             }
             targetFrame = CGRect(origin: CGPoint(x: x, y: y), size: originalFrame.size)
         }
-        contextMenu?.sourceViewInfo = ContextMenuSourceViewInfo(alpha: alpha,
-                                                                snapshot: snapshot(),
-                                                                originalFrame: originalFrame,
-                                                                targetFrame: targetFrame)
+        contextMenu?.sourceViewInfo = ContextMenuSourceViewInfo(
+            alpha: alpha,
+            snapshot: snapshot(),
+            originalFrame: originalFrame,
+            targetFrame: targetFrame
+        )
     }
 }

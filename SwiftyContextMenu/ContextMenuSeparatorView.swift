@@ -5,12 +5,15 @@
 //  Created by Paul Bancarel on 28/11/2020.
 //
 
-class ContextMenuSeparatorView: UIStackView {
+import UIKit
+
+final class ContextMenuSeparatorView: UIStackView {
     var style: ContextMenuUserInterfaceStyle {
         didSet {
             updateLightDarkVisibility()
         }
     }
+
     private let lightView: UIView
     private let darkView: UIVisualEffectView
     

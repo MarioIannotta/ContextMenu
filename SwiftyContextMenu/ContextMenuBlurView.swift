@@ -5,6 +5,8 @@
 //  Created by Paul Bancarel on 28/11/2020.
 //
 
+import UIKit
+
 class ContextMenuBlurView: IntensityVisualEffectView {
     
     class var intensity: CGFloat { 1.0 }
@@ -30,5 +32,4 @@ class ContextMenuBlurView: IntensityVisualEffectView {
     internal class func blurEffect(_ style: ContextMenuUserInterfaceStyle) -> UIVisualEffect {
         UIVisualEffect()
     }
-
 }

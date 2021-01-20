@@ -5,7 +5,7 @@
 //  Created by Mario Iannotta on 14/06/2020.
 //
 
-import Foundation
+import UIKit
 
 class ContextMenuWindow: UIWindow, ContextMenuViewControllerDelegate {
 
@@ -27,7 +27,11 @@ class ContextMenuWindow: UIWindow, ContextMenuViewControllerDelegate {
         onDismiss?()
     }
 
-    func contextMenuViewControllerDidDismiss(_ contextMenuViewController: ContextMenuViewController) {
+    // MARK: - ContextMenuViewControllerDelegate
+
+    func contextMenuViewControllerDidDismiss(
+        _ contextMenuViewController: ContextMenuViewController
+    ) {
         resignKey()
     }
 }
