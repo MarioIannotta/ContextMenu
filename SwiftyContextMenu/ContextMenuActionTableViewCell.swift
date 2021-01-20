@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ContextMenuActionTableViewCell: UITableViewCell {
+final class ContextMenuActionTableViewCell: UITableViewCell {
     
     private let rightImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 25, height: 25))
     private let lightSelectedBackgroundView: UIVisualEffectView

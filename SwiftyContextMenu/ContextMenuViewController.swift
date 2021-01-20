@@ -7,9 +7,10 @@
 
 import UIKit
 
-protocol ContextMenuViewControllerDelegate: class {
-
-    func contextMenuViewControllerDidDismiss(_ contextMenuViewController: ContextMenuViewController)
+protocol ContextMenuViewControllerDelegate: AnyObject {
+    func contextMenuViewControllerDidDismiss(
+        _ contextMenuViewController: ContextMenuViewController
+    )
 }
 
 class ContextMenuViewController: UIViewController {
@@ -145,7 +146,10 @@ class ContextMenuViewController: UIViewController {
         let titleLabel = ContextMenuTitleLabel(frame: .zero, style: contextMenu.style)
         titleLabel.text = title
         titleLabel.sizeToFit()
-        titleLabelContainterView.fill(with: titleLabel, insets: UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10))
+        titleLabelContainterView.fill(
+            with: titleLabel,
+            insets: UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        )
         
         return titleLabelContainterView
     }

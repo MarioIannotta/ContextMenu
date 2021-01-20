@@ -5,7 +5,9 @@
 //  Created by Paul Bancarel on 28/11/2020.
 //
 
-class ContextMenuBackgroundBlurView: ContextMenuBlurView {
+import UIKit
+
+final class ContextMenuBackgroundBlurView: ContextMenuBlurView {
     
     override class var intensity: CGFloat { 0.25 }
     
